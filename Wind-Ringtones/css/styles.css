@@ -1,0 +1,683 @@
+html {
+box-sizing: border-box;
+font-family: Open sans, Sans serif, Arial;
+font-size: 100%;
+height: 100%;
+}
+
+body {
+margin:0;
+height: 100%;
+}
+
+body.error {
+background-color: #00ace8;
+margin: 0 auto 0 auto;
+width: 1024px;
+}
+
+header {
+height: 145px /*9.05rem*/;
+background: blue;
+position: fixed;
+width: 250px /*15.6rem*/;
+background: #02b2ed;
+float: left;
+}
+
+nav {
+height: 145px /*9.05rem*/;
+width: calc(100% + -250px);
+margin-left: 250px;
+float: left;
+background:url("../images/windBG.jpg") no-repeat scroll left top / auto 100% #2bc2f1;
+color: #fff;
+position: relative;
+font-size: 0.9rem;
+}
+
+#main-container {
+width: 100%;
+background: #f0f3f5;
+float: left;
+}
+
+aside {
+width: 250px /*15.6rem*/;
+position: fixed;
+height: 100%;
+z-index: 2;
+}
+
+main {
+margin-left: 250px /*15.6rem*/;
+width: calc(100% + -250px);
+float: left;
+}
+
+section {
+width: 100%;
+float: left;
+position: relative;
+}
+
+footer {
+width: calc(100% + -250px);
+float: left;
+margin-left: 250px /*15.6rem*/;
+}
+
+
+
+p {
+font-weight: 300;
+font-size: 1rem;
+}
+
+#shadow {
+width: 250px /*15.6rem*/;
+height: 100%;
+position: fixed;
+z-index: 1;
+}
+
+#shadow, button, .top1-6 , nav > ul > li:hover {
+-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+-moz-box-shadow:    0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+box-shadow:         0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+header img {
+height: 4rem;
+margin: 2.3rem auto;
+display: block;
+}
+
+a#mobile-menu-access, a#mobile-login-access {
+height: 2rem;
+width: 3rem;
+position: absolute;
+top: calc(50% + -2rem);
+margin: 0 1.5rem;
+padding-top: 2.5rem;
+text-align: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.9rem;
+background: pink;
+display: none;
+}
+
+a#mobile-menu-access {
+background: url("../images/sprite_windrbt.png") no-repeat scroll -51px -2px;
+}
+
+a#mobile-login-access {
+background: url("../images/sprite_windrbt.png") no-repeat scroll -89px 0;
+right: 0;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+position: absolute;
+top: calc(50% + -1.3rem);
+}
+
+nav li {
+display: inline-block;
+position: relative;
+padding: 0.6rem 1rem;
+margin-right: 1rem;
+
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+}
+
+nav li:hover > a {color: #3c3c3c;}
+
+nav li:hover {
+background: #f0f3f5;
+-webkit-border-radius: 2px 2px 2px 2px;
+-moz-border-radius: 2px 2px 2px 2px;
+border-radius: 2px 2px 2px 2px;
+z-index: 1;
+}
+
+nav > ul > li > a > span {margin-left: 0.5rem;}
+
+nav > ul > li > a > em {
+	position:absolute;
+	top:10px;
+	margin-left:4px;
+	border-left:4px solid rgba(0, 0, 0, 0);
+	border-right:4px solid rgba(0, 0, 0, 0);
+	border-top:4px solid #fff;
+	transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	transition:transform 0.2s ease 0s;
+	-webkit-transition:transform 0.2s ease 0s;
+}
+
+.mobile-menu-extras {display: none;}
+
+.sub-menu {
+
+}
+
+.sub-menu ul {
+top: 2.2rem;
+z-index: 2;
+background: #fff;
+padding: 1rem 3rem 1.3rem 1.3rem;
+margin-left: -1rem;
+-webkit-border-radius: 0px 2px 2px 2px;
+-moz-border-radius: 0px 2px 2px 2px;
+border-radius: 0px 2px 2px 2px;
+display: none;
+-webkit-box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.25);
+-moz-box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.25);
+box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+nav > ul > li:hover > div.sub-menu > ul {
+display: block;
+}
+
+.sub-menu li {
+padding: 0 0 0.5rem;
+display: block;
+}
+
+.sub-menu li:hover {background: none;}
+
+.sub-menu li:hover > a {color: #d1232a;}
+
+.sub-menu a {
+color: #3c3c3c;
+font-size: 0.9rem;
+}
+
+.sub-menu ul span {
+
+}
+
+.hp-categorie {
+width: 33.3333%;
+height: 0;
+padding-bottom: 33.3333%;
+float: left;
+position: relative;
+}
+
+.catnav {
+height: 34%;
+width: 100%;
+background: rgba(0, 0, 0, 0.65);
+position: absolute;
+overflow: hidden;
+}
+
+.catnav a {
+color: #fff;
+text-decoration: none;
+top: calc(50% + -1.05rem);
+position: inherit;
+right: 10%;
+font-style: italic;
+font-size: 1.05rem;
+}
+
+.catnav span {
+background: url(../images/sprite_windrbt.png) no-repeat 0 -2px / 18.6rem auto;
+height: 1.5rem;
+width: 1.5rem;
+float: right;
+margin-left: 0.7rem;
+}
+
+.catinfo {
+position: absolute;
+bottom: 0;
+width: 90%;
+margin: 0 5% 5%;
+}
+
+.catinfo a {
+color: #3b3b3b;
+text-decoration: none;
+background-color: #fff;
+margin: 0;
+padding: 0.1rem 0.6rem;
+}
+
+h3 {
+font-weight: 300;
+margin: 0;
+color: #3b3b3b;
+font-size: 1rem;
+}
+
+button {
+background: #d1232a;
+font-family: Open sans, Sans serif, Arial; 
+font-weight: 700;
+font-style: italic;
+margin-top: 6%;
+font-size: 0.9rem;
+color: #fff;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+border: none;
+padding: 0.25rem 1.9rem;
+cursor: pointer;
+}
+
+.hp-choice-infos > button {
+font-size: 1.2rem;
+padding: 0.5rem 2rem;
+left: calc(25% + -5.25rem);
+bottom: 15%;
+margin: 0;
+position: absolute;
+}
+
+.hp-choice-infos {
+width: 50%;
+height: 0;
+padding-bottom: 50%;
+float: left;
+background-color: #004276;
+text-align: center;
+}
+
+.hp-choice-infos p {
+color: #fff;
+float: left;
+width: 50%;
+position: absolute;
+bottom: 34%;
+margin: 0;
+}
+
+.hp-choice-img {
+width: 50%;
+height: 0;
+padding-bottom: 50%;
+float: left;
+position: relative;
+}
+
+.hp-choice-img > span {
+background: url("../images/sprite_windrbt.png") no-repeat scroll -10px -30px rgba(0, 0, 0, 0);
+width: 10px;
+height: 30px;
+position: absolute;
+top: 46%;
+}
+
+.fittext {
+width: 100%;
+float: left;
+}
+
+h4 {
+font-size:5.5rem;
+color: #fff;
+font-style: italic;
+font-weight: 700;
+letter-spacing: -0.1em;
+line-height: 70%;
+margin: 15% 10% 10%;
+}
+
+h4 span {
+float: left;
+}
+
+#section1-2container {
+width: 100%;
+float: left;
+}
+
+#top-header {
+width: 100%;
+background: #282828;
+color: #fff;
+text-align: center;
+font-size: 4rem;
+font-weight: 800;
+font-style: italic;
+letter-spacing: -0.5rem;
+}
+
+#top-header > h4 {
+margin: 0;
+padding: 1.5rem 0;
+}
+
+#top1-6-wrapper {
+margin: 0.8%;
+float: left;
+width: 98.4%;
+}
+
+.top1-6 {
+width: 48%;
+height: 0;
+padding-bottom: 12%;
+float: left;
+position: relative;
+margin: 1%;
+background-color: #fff;
+overflow: hidden;
+}
+
+.topDLimg {
+width: 26%;
+float: left;
+height: 100%;
+position: absolute;
+}
+
+.topcount {
+background: #d1232a;
+color: #fff;
+height: 2rem;
+width: 2rem;
+border-radius: 2rem;
+font-size: 1.3rem;
+font-weight: 700;
+line-height: 2rem;
+margin: calc(50% + -1.15rem) auto 0;
+text-align: center;
+}
+
+.topDLimg > span {
+background: url("../images/sprite_windrbt.png") no-repeat scroll -24px -38px rgba(0, 0, 0, 0);
+width: 7px;
+height: 15px;
+position: absolute;
+top: calc(50% + -7px);
+right: 0;
+}
+
+.topDLinfo {
+width:61.5%;
+float: left;
+margin-left: 26%;
+}
+
+.topDLinfo p {
+font-size: 0.8rem;
+margin: 0;
+padding: 5% 7% 0;
+}
+
+.topDLinfo p > span {
+font-weight: 400;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+position: absolute;
+width: 53.5%;
+}
+
+.topDLimg  a {
+text-decoration: none;
+height: 100%;
+width: 100%;
+position: absolute;
+}
+
+a.topDLbtnplay, a.topDLbtndl  {
+height: 50%;
+width: 12.4%;
+border-left: 1px solid #d9d9d9;
+position: absolute;
+}
+
+.topDLbtnplay {
+border-bottom: 1px solid #d9d9d9;
+}
+
+.topDLbtndl {
+bottom: 0;
+}
+
+a.topDLbtnplay > span, a.topDLbtndl> span {
+height: 24px;
+width: 24px;
+margin: calc(50% + -12px) auto;
+display: block;
+}
+
+a.topDLbtndl> span {
+background: url("../images/icon_sprite.png") no-repeat scroll -23px 0 rgba(0, 0, 0, 0);
+}
+
+a.topDLbtnplay > span {
+background: url("../images/icon_sprite.png") no-repeat scroll 1px 0 rgba(0, 0, 0, 0);
+}
+
+.aside-gutter {
+width: 80%;
+padding: 0 10%;
+float: left;
+}
+
+h5 {
+font-size: 1rem;
+font-weight: 400;
+font-style: italic;
+background: #282828;
+width: 125%;
+color: #fff;
+height: 3rem;
+margin: 0 0 0.5rem -12.5%;
+text-align: center;
+line-height: 3rem;
+float: left;
+}
+
+.aside-gutter form {
+width: 100%;
+height: auto;
+float: left;
+margin-bottom: 1rem;
+font-weight: 300;
+}
+
+.inputbox-login {
+height: 2rem;
+margin: 0.7rem auto 0;
+display: block;
+width: 100%;
+font-size: 0.8rem;
+fony-weight: 400;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+border-width: 0;
+}
+
+.tickbox {
+font-size: 0.6rem;
+float: left;
+margin: 0.8rem 0;
+color: #999;
+}
+
+.loginbtn {
+padding: 0.15rem 0.5rem;
+font-size: 0.8rem;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+background: #33c1ef;
+margin: 1.5rem auto 0;
+display: block;
+}
+
+.inputbox-select {
+font-size: 0.8rem;
+}
+
+.inputbox-select .inputbox-login {
+appearance: none;
+-moz-appearance:none;
+-webkit-appearance:none;
+-ms-appearance: : none;
+-o-appearance: none;
+background: url("../images/sprite_windrbt.png") no-repeat scroll 10.3rem -4.25rem / 18.6rem auto #fff;
+}
+
+select::-ms-expand {display: none;} 
+
+hr {
+height:1px;
+background-color: #282828;
+border: 0;
+margin: 1.4rem 0 0.7rem;
+}
+
+.footer-top {
+background: #fff;
+font-size: 0.75rem;
+padding: 5% 10%;
+text-align: center;
+}
+
+.footer-bottom {
+background: #00ace8;
+padding-top: 1rem;
+width: 100%;
+float: left;
+}
+
+footer ul {
+margin: 0;
+padding: 0;
+text-align: center;
+width: 100%;
+float: left;
+}
+
+footer li {
+display: inline-block;
+padding: 0 1rem;
+}
+
+footer a {
+color: #fff;
+font-size: 0.8rem;
+}
+
+.footer-bottom img {
+float: right;
+margin: 2rem;
+width: 8rem;
+}
+
+
+@media screen and (min-width:1340px){
+	.topDLinfo p {font-size: 1rem;}
+	.catnav a {font-size: 1.15rem; top: calc(50% + -1.15rem);}
+}
+
+@media screen and (min-width:1280px){
+	#section1-2container {width: 66%;}
+	.topdl {width: 34%;}
+	.top1-6 {width:98%; padding-bottom:25%;}
+	.hp-choice-infos p {font-size: 1.3rem; bottom: 32.5%;}
+}
+
+@media screen and (max-width:1024px){
+	html {font-size: 95%;}
+	header {height: 115px; width: 200px;}
+	header img {margin: 1.8rem auto;}
+	nav {height: 115px; width: calc(100% + -200px); margin-left: 200px;}
+	aside {width: 200px;}
+	main {width: calc(100% + -200px); margin-left: 200px;}
+	footer {width: calc(100% + -200px); margin-left: 200px;}
+	#shadow {width: 200px;}
+	.inputbox-select .inputbox-login {background:url("../images/sprite_windrbt.png") no-repeat scroll 8.5rem -4.25rem / 18.6rem auto #fff;}
+}
+
+@media screen and (max-width:768px){
+	header {height: 7rem; width: 100%; position: relative;}
+	header img {height: 3rem; margin: 1.8rem auto;}
+	aside {display: none}
+	main, footer {margin: 0; width: 100%;}
+	#shadow {width: 100%; height: 0.1rem; position: absolute; margin-top: 6.9rem;}
+	a#mobile-menu-access, a#mobile-login-access {display: block;}
+	.mobile-menu-extras {display: list-item;}
+	
+	nav {
+	position: fixed;
+	width: 12rem;
+	float: none;
+	height: 100vh;
+	margin: 0;
+	background: #f0f3f5;
+	z-index: 1000;
+	display: none;
+	}
+	
+	nav a {
+	color: #4c4c4c;
+	font-weight: 600;
+	}
+	
+	nav ul {
+	padding: 1rem 2rem 0;
+	position: relative;
+	top: auto;
+	}
+	
+	nav li {
+	padding: 1rem 0;
+	display: list-item;
+	}
+	
+}
+
+@media screen and (max-width:630px){
+	.hp-categorie {width: 50%; padding-bottom: 50%;}
+	.hp-choice-infos {width: 100%; float: none; padding-bottom: 33.33%; position: absolute; z-index: 20;}
+	.hp-choice-img {float: none; width: 100%; padding-bottom: 100%; z-index: 10;}
+	.fittext {margin: 0 15%; width: 70%;}
+	h4 {margin: 8% 10% 0;}
+	.hp-choice-img > span {transform: rotate(90deg); top: calc(33.33% + -10px); left: calc(50% + -5px);}
+	.hp-choice-infos > button {margin: 15% auto 0; position: relative; left: auto;}
+	.hp-choice-infos p {margin: 50% 0 0; width: 100%; position: relative; float: none; color: #282828;}
+	.hp-choice-infos p > span {background-color: #fff; padding: 0 0.65em;}
+	.footer-bottom img {width: 4rem; margin: 2rem calc(50% + -2rem) 1rem 0;}
+	.top1-6 {width: 98%; padding-bottom: 25%;}
+	.topDLinfo p {font-size: 1rem;}
+}
+
+@media screen and (max-width:768px) and (min-width:420px){
+	a#mobile-menu-access {background: url("../images/sprite_windrbt.png") no-repeat scroll -47px -1px ; font-size: 0.8rem; height: 1.5rem; padding-top: 2rem; width: 2.5rem; top:calc(50% + -1.7rem);}
+	a#mobile-login-access {background: url("../images/sprite_windrbt.png") no-repeat scroll -85px 0 ; right: 0; font-size: 0.8rem; height: 1.5rem; padding-top: 2rem; width: 2.5rem; top:calc(50% + -1.7rem);}
+}
+	
+	
+@media screen and (max-width:420px){
+	html {font-size: 80%;}
+	a.topDLbtnplay > span, a.topDLbtndl > span {height: 18px; width: 16px; margin: calc(50% + -7px) auto}
+	a.topDLbtnplay > span {background: url("../images/icon_sprite.png") no-repeat scroll -48px -3px;}
+	a.topDLbtndl > span {background: url("../images/icon_sprite.png") no-repeat scroll -62px -3px;}
+	a#mobile-menu-access {background: url("../images/sprite_windrbt.png") no-repeat scroll -47px -1px;}
+	a#mobile-login-access {background: url("../images/sprite_windrbt.png") no-repeat scroll -85px 0; right: 0;}
+}
+
+@media screen and (max-width:360px){
+	html {font-size: 65%;}
+	a#mobile-menu-access {background: url("../images/sprite_windrbt.png") no-repeat scroll -51px -1px;}
+	a#mobile-login-access {background: url("../images/sprite_windrbt.png") no-repeat scroll -89px 0; right: 0;}
+}
