@@ -40,7 +40,7 @@ nav a{
 }
 
 article {
-	width: 38%;
+	width: 50%;
 	float: left;
 	height: 100%;
 	position: absolute;
@@ -56,29 +56,32 @@ aside {
 
 #scroll {
 	font-size: 1rem;
-	letter-spacing: 0.2rem;
-	position: absolute;
-	bottom: 0;
-	width: calc(100% + -9vh);
-	text-align: center;
-	padding-bottom: 15vh;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% + -30vh);
+    text-align: center;
+    padding-bottom: 18vh;
 }
 
 #walk{
 	position: relative;
-	display: inline-block;
-	transform: rotate(90deg);
+    display: inline-block;
+    transform: rotate(90deg);
+    padding: 0 0.5rem;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.5rem;
 }
 
 
 #walk::after {
-	content:"\A";
+	content: "\A";
     border-style: solid;
     border-width: 0.3rem 0 0.3rem 0.5rem;
     border-color: transparent transparent transparent #000;
     position: absolute;
-    right: -1rem;
-    top: 0.24rem;
+    right: -0.25rem;
+    top: 1.55rem;
 }
 
 .sld {
@@ -114,7 +117,7 @@ section{}
 h1{
 	font-size: 4.5rem;
 	font-weight: normal;
-	margin: 3.5rem 0;
+	margin: 1.5rem 0;
 }
 
 .info-project {
@@ -125,7 +128,7 @@ h1{
 }
 
 .info-project ul {
-	padding: 1rem 3.5rem;
+	padding: 1rem 1.5rem;
 	display: inline-block;
 	float: left;
 }
@@ -140,7 +143,7 @@ h1{
 
 p {
 	font-size: 1.6rem;
-	margin: 3.5rem 0;
+	margin: 1.5rem 0;
 	display: inline-block;
 }
 
@@ -156,7 +159,7 @@ figcaption {
 }
 
 figure img {
-	margin: 3.5rem;
+	margin: 1.5rem 3.5rem 3.5rem 0;
 	float: left;
 	box-shadow: 0.4rem 0.4rem #bfbfbf;
 	max-width: calc(100% - 3.5rem);
