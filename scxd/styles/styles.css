@@ -7,15 +7,15 @@ header {
 	position: fixed;
 	width: 100%;
 	z-index: 1;
-	padding-right: 7rem;
+	display: none;
 }
 
 nav {
 	float: right;
 	font-size: 0.8rem;
-	background: #222;
-	padding: 1rem 1.6rem;
-	display: none;
+	background: #fff;
+	padding: 1rem 1.5rem 1rem 0.5rem;
+	margin-right: 2rem;
 }
 
 nav ul {
@@ -25,11 +25,11 @@ nav ul {
 nav ul li {
 	float: left;
 	list-style-type: none;
-	margin: 0 0.5rem;
+	margin: 0 0 0 1rem;
 }
 
 nav a{
-	color:#fff;
+	color:#222;
 	text-decoration: none;
 }
 
@@ -40,19 +40,39 @@ nav a{
 	float: left;
 }
 
-article {
-	width: 50%;
+#scxd-top {
+	width: 100%;
 	float: left;
-	height: 100%;
-	position: absolute;
-	padding: 15vh;
+	height: 70%;
+	height: 70vh;
+
+	padding: 7rem 3.5rem 3.5rem;
 }
 
-aside {
-	width: 50%;
+#scxd-bottom {
+	width: 100%;
 	float: right;
-	height: 100vh;
-	padding-top: 61vh;
+	height: 30%;
+	height: 30vh;
+
+}
+
+.imghp {
+	background: url(../images/looklook3.jpg);
+	background-size: cover;
+	background-position: left bottom;
+	width: 50%;
+	height: 60vh;
+	float: right;
+}
+
+#info .imghp {
+	margin-top: -30vh;
+}
+
+#info p {
+	padding: 7rem;
+	font-size: 2.4rem;
 }
 
 #scroll {
@@ -60,7 +80,7 @@ aside {
     letter-spacing: 0.2rem;
     position: absolute;
     bottom: 0;
-    width: calc(100% + -30vh);
+    width: 50%;
     text-align: center;
     padding-bottom: 18vh;
 }
@@ -82,19 +102,7 @@ aside {
     border-color: transparent transparent transparent #000;
     position: absolute;
     right: -0.25rem;
-    top: 1.55rem;
-}
-
-.sld {
-
-}
-
-.imghp {
-	background: url(../images/looklook.jpg);
-	background-size: cover;
-	background-position: left bottom;
-	width: 100%;
-	height: 100%;
+    top: 1.48rem;
 }
 
 #hp h1 {
@@ -233,5 +241,6 @@ background-size: 20rem auto;
 
 .orAndroid {
 background-image: url(../images/Wind_Ringtones_Mobile.jpg);
-animation: animatedBackground 20s linear infinite
+animation: animatedBackground 20s linear infinite;
+animation-delay: 3s;
 }
