@@ -14,27 +14,33 @@
 		<!--<div class="lan-select"><a href="index.html/en">EN</a>/<a href="index.html">FR</a></div>-->
 		<nav>
 			<ul>
-				<li><a href="#">HOME</a></li>
-				<li><a href="#">INFOS</a></li>
-				<li><a href="#">PROJETS</a></li>
-				<li><a href="#">CONTACT</a></li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#infos">Infos</a></li>
+				<li><a href="#allyoucanplay">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main id="fullpage">
-		<section class="section" id="hp">
-			<article>
+		<section class="section" id="hp" anchor="home">
+			<div id="scxd-top">
 				<h1>SCXD</h1>
-				<h2>Gaphic + Web Design</h2>
+				<h2>Graphic + Web Design</h2>
+			</div>
+			<div id="scxd-bottom">
 				<div id="scroll">
 					<div id="walk">Walk this way</div>
 				</div>
-			</article>
-			<aside>
-				<div class="sld imghp"></div>
-			</aside>
+				<div class="imghp"></div>
+			</div>
 		</section>
-		<section class="section">
+		<section class="section" id="info" anchor="infos">
+				<div class="imghp"></div>
+				<p>I’m Sam Cobham, a Graphic & Web Designer based in Marseille, France. I conceive and design all visual communication needs for digital and print, I also design and build websites.
+				Additionally I offer French / English translation services.<br>
+				Keep scrolling to discover some projects I've worked on.</p>
+		</section>
+		<section class="section" anchor="allyoucanplay">
 			<div class="sect-cont">
 				<h1>All You Can Play</h1>
 				<div class="info-project">
@@ -69,7 +75,7 @@
 				</figure>
 			</div>
 		</section>
-		<section class="section">
+		<section class="section" anchor="blacksocks">
 			<div class="sect-cont">
 				<h1>Blacksocks UK</h1>
 				<div class="info-project">
@@ -103,7 +109,7 @@
 				</figure>
 			</div>
 		</section>
-		<section class="section">
+		<section class="section" anchor="digitalentertainment">
 			<div class="sect-cont">
 				<h1>Digital Entertainment Marketing</h1>
 				<div class="info-project">
@@ -162,7 +168,7 @@
 				</figure>
 			</div>
 		</section>
-		<section class="section">
+		<section class="section" anchor="ringtonestore">
 			<div class="sect-cont">
 				<h1>Ringtone Store</h1>
 				<div class="info-project">
@@ -194,8 +200,10 @@
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
 		sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
-		scrollOverflow: true
+		anchors: ['home', 'infos', 'allyoucanplay', 'blacksocks', 'digitalentertainment', 'ringtonestore', 'contact'],
+		scrollOverflow: true,
 	});
+
 </script>
 
 
