@@ -1,4 +1,4 @@
-html, body {height:100%; font-family:'geomanistregular', Helvetica, sans-serif; font-size:100%; background-color:#fff; color:#222; letter-spacing: 0.03rem;}
+html, body {height:100%; font-family:'basier_squareregular', Helvetica, sans-serif; font-size:100%; background-color:#fff; color:#222;}
 
 * {box-sizing: border-box; margin: 0; padding: 0;}
 
@@ -120,18 +120,19 @@ nav a{
 section{}
 
 .sect-cont {
-	padding: 3.5rem;
+	
+}
+
+.project-txt {
+	padding: 7rem;
 }
 
 h1{
 	font-size: 4.5rem;
 	font-weight: normal;
-	margin: 1.5rem 0;
 }
 
 .info-project {
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
 	display: inline-block;
 	width: 100%;
 }
@@ -143,35 +144,42 @@ h1{
 }
 
 .info-project ul:first-child {
-	border-right: 1px solid #000;
+
 }
 
 .info-project li {
 	list-style-type: none;
+	line-height: 1.6;
 }
 
 p {
-	font-size: 1.6rem;
-	margin: 1.5rem 0;
+	font-size: 1.4rem;
+	line-height: 1.6;
+	margin: 0 0;
 	display: inline-block;
 }
 
 figure {
 	display: inline-block;
 	width: 100%;
-	border-top: 1px solid #000;
-	padding: 3.5rem 0 7rem;
-}
-
-figcaption {
-	font-size: 1.6rem;
+	margin-bottom: 3.5rem;
 }
 
 figure img {
-	margin: 1.5rem 3.5rem 3.5rem 0;
 	float: left;
-	box-shadow: 0.4rem 0.4rem #bfbfbf;
-	max-width: calc(100% - 3.5rem);
+	/*box-shadow: 0.4rem 0.4rem #bfbfbf;*/
+	width: 67%;
+}
+
+figcaption {
+	float: left;
+	width: 33%;
+	line-height: 1.6;
+	padding: 3.5rem
+}
+
+figure:last-child {
+	margin-bottom: 7rem;
 }
 
 /*figure:last-child {
@@ -191,13 +199,19 @@ figure#wind-res, figure#wind-web {
 	border: none;
 }
 
+div#wind > figure:nth-child(2) {
+	padding: 3.5rem;
+	width: 67%;
+	background-color: #f0f0f0;
+}
+
 
 .phone {
 width:22rem;
 height: 46rem;
 position:relative;
 background-color:#000;
-margin: 0 0 0 6rem;
+margin: auto;
 -webkit-border-radius:2rem; -moz-border-radius:2rem; border-radius:2rem; 
 }
 
@@ -243,4 +257,73 @@ background-size: 20rem auto;
 background-image: url(../images/Wind_Ringtones_Mobile.jpg);
 animation: animatedBackground 20s linear infinite;
 animation-delay: 3s;
+}
+
+
+@media only screen and (max-width : 1024px) {
+
+#hp h1 {font-size: 14rem;}
+
+#scxd-top {height: 45vh;}
+
+#scxd-bottom {height: 55vh;}
+
+.imghp {height: 75vh;}
+
+#info .imghp {margin-top: -55vh;}
+
+#info p {font-size: 2rem;}
+
+.project-txt {padding: 2rem;}
+
+h1 {font-size: 3rem;}
+
+.info-project li {font-size: 0.8rem;}
+
+p {font-size: 1rem;}
+
+figure {margin-bottom: 2rem;}
+
+figcaption {font-size: 0.8rem; padding: 2rem;}
+
+}
+
+@media only screen and (max-width : 768px) {
+
+.info-project > ul > li:last-child {display: none;}
+
+}
+
+@media only screen and (max-width : 414px) {
+
+section#hp {background: url(../images/looklook3.jpg) no-repeat top 4rem left 1rem / cover;}
+
+#scxd-top {padding: 1rem; height: auto; background-color: #fff;}
+
+#hp h1 {font-size: 6rem;}
+
+#hp h2 {font-size: 1.1rem;}
+
+#scxd-bottom {display: none;}
+
+article#info .imghp {display: none;}
+
+#info p {font-size: 1.6rem; padding: 1rem;}
+
+.project-txt {padding: 1rem;}
+
+.project-txt h1 {font-size: 2rem;}
+
+figure {padding: 1rem 1rem 0; margin: 0;}
+
+figure img {width: 100%;}
+
+figcaption {display: none;}
+
+.info-project ul {padding: 0; float: none; display: block;}
+
+.info-project {padding: 1rem;}
+
+div#wind > figure:nth-child(2) {display: none;}
+
 }
