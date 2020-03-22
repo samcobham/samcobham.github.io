@@ -284,6 +284,7 @@ section#product, section#product-pres-1, section#product-pres-2, section#product
 	width: calc(100% + -2rem) !important;
 	height: auto !important;
 	margin: -6rem 0 0.5rem -1rem;
+	background-color: #000;
 }
 
 .store-btn {
@@ -561,7 +562,10 @@ span.contact-margin {
 
 	#product h1 {font-size: 1.4rem;}
 
-	section#product, 
+	section#product {
+		padding-top: 8rem;
+	}
+
 	section#product-pres-1, 
 	section#product-pres-2, 
 	section#product-pres-3, 
@@ -584,7 +588,7 @@ span.contact-margin {
 
 	img.dalmatien {
 		width: 83%;
-		bottom: -14%;
+		bottom: -5%;
 	}
 
 }
