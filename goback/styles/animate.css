@@ -1,25 +1,58 @@
 .animate-img-right {
 	opacity: 0;
+
+	-webkit-transform: translate(calc(100% + 1rem), 0);
+	-moz-transform: translate(calc(100% + 1rem), 0);
+	-ms-transform: translate(calc(100% + 1rem), 0);
+	-o-transform: translate(calc(100% + 1rem), 0);	
 	transform: translate(calc(100% + 1rem), 0);
+
+	-webkit-transition: transform .75s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
+	-moz-transition: transform .75s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
+	-ms-transition: transform .75s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
+	-o-transition: transform .75s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
 	transition: transform .75s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
-	will-change: transform, opacity;
+
+	will-change: transform, opacity,;
 }
 
 .animate-img-left {
 	opacity: 0;
+
+	-webkit-transform: translate(calc(-100% + 1rem), 0);
+	-moz-transform: translate(calc(-100% + 1rem), 0);
+	-ms-transform: translate(calc(-100% + 1rem), 0);
+	-o-transform: translate(calc(-100% + 1rem), 0);
 	transform: translate(calc(-100% + 1rem), 0);
+
+	-webkit-transition: transform .75s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
+	-moz-transition: transform .75s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
+	-ms-transition: transform .75s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
+	-o-transition: transform .75s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
 	transition: transform .75s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
+
 	will-change: transform, opacity;
 }
 
 .animate-img-right.is-visible, .animate-img-left.is-visible {
 	opacity: 1;
+
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
 	transform: translate(0, 0);
 }
 
 .fade-txt {
 	opacity: 0;
+
+	-webkit-transition: opacity .3s .25s ease-out;
+	-moz-transition: opacity .3s .25s ease-out;
+	-ms-transition: opacity .3s .25s ease-out;
+	-o-transition: opacity .3s .25s ease-out;
 	transition: opacity .3s .25s ease-out;
+
 	will-change: opacity;
 }
 
@@ -27,15 +60,4 @@
 	opacity: 1;
 }
 
-/**.product-img {
-	opacity: 0;
-	transform: translate(0, 100%);
-	transition: transform .75s .25s cubic-bezier(0,1,.3,1),  opacity .3s .25s ease-out;
-	will-change: transform, opacity;
-}
-
-.product-img.is-visible {
-	opacity: 1;
-	transform: translate(0, 0);
-}**/
 
