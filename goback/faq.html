@@ -7,24 +7,41 @@
 	<link rel="stylesheet" type="text/css" media='screen' href="styles/animate.css">
 	<meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0" />	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<header>
-		<img src="images/goback-logo.png" alt="GoBack Logo" class="logo">
+	<header class="header-default">
+		<a href="index.html"><img src="images/goback-logo.png" alt="GoBack Logo" class="logo"></a>
 		<nav>
+			<input type="checkbox" class="menu-btn" id="menu-btn">
+			<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
 			<ul class="menu">
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="aide.html">Support</a>
-					<!--<ul class="sub-menu">
-						<li><a href="#">Aide</a></li>
-						<li><a href="#">FAQ</a></li>
-					</ul>-->
+				<li class="nosub"><a href="index.html">Accueil</a></li>
+				<li class="sub"><a href="#">Support</a>
+					<ul class="sub-menu">
+						<li><a href="aide.html">Aide</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+					</ul>
 				</li>
-				<li><a href="faq.html">Portail utilisateur</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li>&#x7C;</li>
-				<li><a href="#"><img src="images/france.svg" alt="French flag" class="flag"> Français</a></li>
+				<li class="sub"><a href="#">Portail utilisateur</a>
+					<ul class="sub-menu">
+						<li><a href="#">Créer un compte</a></li>
+						<li><a href="#">S'authentifier</a></li>
+						<li><a href="#">Lire une médaille</a></li>
+						<li><a href="#">Mes animaux</a></li>
+					</ul>
+				</li>
+				<li class="nosub"><a href="contact.html">Contact</a></li>
+				<li><span>&#x7c;</span></li>
+				<li class="sub"><a href="#"><img src="images/france.svg" alt="French flag" class="flag">FR</a>
+					<ul class="sub-menu language">
+						<li><a href="#"><img src="images/france.svg" alt="British flag" class="flag">EN</a></li>
+						<li><a href="#"><img src="images/france.svg" alt="Spanish flag" class="flag">ES</a></li>
+						<li><a href="#"><img src="images/france.svg" alt="German flag" class="flag">DE</a></li>
+						<li><a href="#"><img src="images/france.svg" alt="Italian flag" class="flag">IT</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 	</header>
@@ -36,7 +53,6 @@
 			</div>
 		</div>
 		<section>
-			<h2>Trouvez ici les réponses aux questions les plus fréquentes.</h2>
 			<article>
 				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ?</h3>
 				<p>Incididunt ut labore et dolore magna aliqua. Sed pulvinar proin gravida hendrerit lectus a. Velit scelerisque in dictum non consectetur. Turpis egestas maecenas pharetra convallis posuere morbi leo. Nulla at volutpat diam ut venenatis tellus in metus. Et netus et malesuada fames ac turpis egestas. Ultrices sagittis orci a scelerisque. Sit amet est placerat in. Quam nulla porttitor massa id neque aliquam vestibulum. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.</p>
@@ -52,26 +68,45 @@
 			<article>
 				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ?</h3>
 				<p>Incididunt ut labore et dolore magna aliqua. Sed pulvinar proin gravida hendrerit lectus a. Velit scelerisque in dictum non consectetur. Turpis egestas maecenas pharetra convallis posuere morbi leo. Nulla at volutpat diam ut venenatis tellus in metus. Et netus et malesuada fames ac turpis egestas. Ultrices sagittis orci a scelerisque. Sit amet est placerat in. Quam nulla porttitor massa id neque aliquam vestibulum. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.</p>
+			</article>
+			<article class="contact-box">
+				<h2>Vous ne trouvez pas les informations dont vous avez besoin ?</h2>
+				<p>Nous nous ferrons un plaisir de vous renseigner par téléphone ou par email.</p>
+				<p>Tél: <a href="+33625411286">+33 (0)6 25 41 12 86</a><span>&#x7C;</span>Horaires : lundi au vendredi
+				09h00 - 12h00 / 14h00 17h00</p>
+				<p>Email : <a href="mailto:support@goback.fr?Subject=From%20goback.fr%20user">support@goback.fr</a></p>
 			</article>
 		</section>
-		<aside class="contact-box">
-			<p class="bold">Vous ne trouvez pas les informations dont vous avez besoin ?</p>
-			<p>Nous nous ferrons un plaisir de vous renseigner par téléphone ou par email.</p>
-			<p>Tél: <a href="+33625411286">+33 (0)6 25 41 12 86</a></p>
-			<p>Horaires : lundi au vendredi
-			09h00 - 12h00 / 14h00 17h00</p>
-			<p>Email : <a href="mailto:support@goback.fr?Subject=From%20goback.fr%20user">support@goback.fr</a></p>
-		</aside>
 	</main>
 	<footer>
-			<div class="footer-info">
-				<p><a href="#">Mentions légales</a><span>&#x7C;</span><a href="#">Contact</a></p>
-			</div>
-			<div class="footer-info">
-				<p>Atria Trading SAS<br>
-				105 rue des Mignottes<br>
-				89005 AUXERRE<br><br>
-				RCS 83044179600018</p>
-			</div>
-		</footer>
+		<div class="footer-info">
+			<p><a href="#">Mentions légales</a><span>&#x7C;</span><a href="#">Contact</a></p>
+		</div>
+		<div class="footer-info">
+			<p>Atria Trading SAS<br>
+			26 rue du Chemin Vert<br>
+			78610 Le Perray en Yvelines<br><br>
+			RCS 83044179600018</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		if ( $(window).width() > 799) {
+			$('nav ul.menu li.sub').hover(function() {
+				$(this).children('ul').stop(true, false, true).slideToggle(300);
+			});
+		}		
+	</script>
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $(".header-default").toggleClass("header-shrunk", $(this).scrollTop() > 50)
+            });
+        });
+    </script>
+
+	<script src="js/show-on-scroll.js"></script>
+
 </body>
+</html>
