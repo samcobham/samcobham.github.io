@@ -839,12 +839,16 @@ span.contact-margin {
 
 @media (max-width: 899px) and (orientation: portrait) {
 
-	.hp-txt {
-		width: 100%;
-		margin-bottom: 3rem;
+	.hp-container {
+		padding: 0;
+		margin-top: 4rem;
 	}
 
-	.hp-container {padding-top: 30%;}
+	.hp-txt {
+		width: 100%;
+		margin: 5rem 0;
+	}
+
 
 	img.dalmatien {
 		width: 83%;
@@ -876,6 +880,10 @@ span.contact-margin {
 
 	.hp-container {
 		height: auto;
+	}
+
+	.hp-txt {
+		margin: 3rem 0;
 	}
 
 	.product-img {padding-top: 5rem;}
