@@ -870,6 +870,10 @@ span.contact-margin {
 
 @media (max-width: 599px) {
 
+	.hp-container {
+		height: auto;
+	}
+
 	.product-img {padding-top: 5rem;}
 
 	#hp p {width: auto;}
