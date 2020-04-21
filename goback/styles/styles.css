@@ -870,6 +870,10 @@ span.contact-margin {
 
 @media (max-width: 599px) {
 
+	section#hp {
+		height: auto;
+	}
+
 	.hp-container {
 		height: auto;
 	}
