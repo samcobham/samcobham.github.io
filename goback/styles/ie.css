@@ -1,0 +1,16 @@
+.animate-img-right, .animate-img-left {
+	opacity: 1 !important;
+	-webkit-transform: none !important;
+	-ms-transform: none !important;
+	transform: none !important;
+	-webkit-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
+}
+
+.fade-txt {
+	opacity: 1 !important;
+	-webkit-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
+}
