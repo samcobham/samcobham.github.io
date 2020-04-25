@@ -181,6 +181,7 @@ h1 {
 p {
 	font-size: 1rem;
 	font-weight: 400;
+	text-align: justify;
 }
 
 a {
@@ -414,7 +415,7 @@ footer {
 
 .footer-info p {
 	text-align: center;
-	color: #666;
+	color: #888;
 	padding: 6rem 0;
 }
 
@@ -424,7 +425,7 @@ footer {
 }
 
 .footer-info a {
-	color: #666;
+	color: #888;
 }
 
 .footer-info span {
@@ -677,7 +678,7 @@ span.contact-margin {
 
 	.menu-icon {
 		display: block;
-		padding: 2rem 1.5rem;
+		padding: 2rem 2rem;
 		position: relative;
 		float: right;
 		cursor: pointer;
@@ -1065,7 +1066,7 @@ span.contact-margin {
 		background-size: cover;
 		background-position: center center;
 		position: relative;
-		margin: 1rem 1rem -3rem 0;
+		margin: 2rem 2rem -3rem 0;
 	}
 
 	#faq .support-title-img {
